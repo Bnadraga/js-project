@@ -2,10 +2,9 @@ body{
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
     color: $primaryTextColor;
-}
-header{
-    background-image: url(../symbol-defs.svg#icon-background);
+    background-image: url(../images/background.webp);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 ul, 
