@@ -1,12 +1,12 @@
 body{
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
-    background-color: $primaryBackgroundColor;
     color: $primaryTextColor;
-    background-image: url(../images/background.webp);
-    background-repeat: no-repeat;
-    background-position: center;
+}
+header{
+    background-image: url(../symbol-defs.svg#icon-background);
     background-size: cover;
+    background-position: center;
 }
 ul, 
 ol{
@@ -41,4 +41,5 @@ img{
     max-width: 1090px;
     padding: 0 175px;
     margin: 0 auto;
+    background-color: $primaryBackgroundColor;
 }
