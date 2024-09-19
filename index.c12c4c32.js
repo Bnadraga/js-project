@@ -1,0 +1,2 @@
+!function(){var t=Math.floor(10*Math.random())+1,e=document.getElementById("card-two-btn"),n=document.querySelector(".card-two__text");e.addEventListener("click",(function(){var e=document.getElementById("card-two-input").value;(e=parseInt(e))===t?n.innerHTML="Вітаю, ви вгадали число ".concat(t,"!"):(n.style.color="#900",n.innerHTML="Ви програли, комп’ютер загадав ".concat(t))}))}();
+//# sourceMappingURL=index.c12c4c32.js.map
