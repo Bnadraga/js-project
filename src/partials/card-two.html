@@ -2,18 +2,22 @@
   <div class="container">
     <h2 class="card-two__title">Вгадай число, яке загадав комп’ютер</h2>
     <div class="card-two__content">
-      <input
-        type="text"
+      <form class="card-two__form">
+        <input
+        type="number"
         id="card-two-input"
         class="card-two__input"
         placeholder="Введіть число"
+        required
       />
-      <button class="card-two__btn" type="submit">
-        <svg>
+      <button class="card-two__btn" id="card-two-btn" type="submit">
+        <svg width="15px" height="15px">
           <use href="./symbol-defs.svg#icon-lupa"></use>
         </svg>
       </button>
+      </form>
       <p class="card-two__text">Вітаю, ви вгадали число! <span>(number)</span></p>
     </div>
+    <div class="card-two__line"></div>
   </div>
 </section>
