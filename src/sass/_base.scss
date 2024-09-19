@@ -3,10 +3,11 @@ body{
     font-family: "Montserrat Alternates", sans-serif;
     color: $primaryTextColor;
 }
-main{
+section{
     background-image: url(../images/background.png);
     background-size: 100%;
     background-position: center;
+    padding: 0 257px;   
 }
 ul, 
 ol{
@@ -39,7 +40,6 @@ img{
 }
 .container{
     max-width: 1090px;
-    padding: 0 175px;
     margin: 0 auto;
     background-color: $primaryBackgroundColor;
 }

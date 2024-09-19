@@ -32,7 +32,7 @@
 <path fill="#000" style="fill: var(--color2, #000)" d="M64 16c0 8.837-7.343 16-16.4 16s-16.4-7.163-16.4-16c0-8.837 7.343-16 16.4-16s16.4 7.163 16.4 16z"></path>
 <path fill="#000" style="fill: var(--color2, #000)" d="M59.627 16c0 6.48-5.385 11.733-12.027 11.733s-12.027-5.253-12.027-11.733c0-6.48 5.385-11.733 12.027-11.733s12.027 5.253 12.027 11.733z"></path>
 </symbol>
-<symbol id="w" viewBox="0 0 64 32">
+<symbol id="icon-header-light-version" viewBox="0 0 64 32">
 <path fill="#7a7a7a" style="fill: var(--color4, #7a7a7a)" d="M16 0h32c8.837 0 16 7.163 16 16s-7.163 16-16 16h-32c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color2, #000)" stroke="#000" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8" d="M32.4 16c0 8.606-7.154 15.6-16 15.6s-16-6.994-16-15.6c0-8.606 7.154-15.6 16-15.6s16 6.994 16 15.6z"></path>
 <path fill="#000" style="fill: var(--color2, #000)" d="M28.427 16c0 6.48-5.385 11.733-12.027 11.733s-12.027-5.253-12.027-11.733c0-6.48 5.385-11.733 12.027-11.733s12.027 5.253 12.027 11.733z"></path>
