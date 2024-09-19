@@ -1,11 +1,19 @@
 <section class="card-two">
-    <div class="container">
-        <h2 class="card-two__title">Вгадай число, яке загадав комп’ютер</h2>
-        <input type="text" id="card-two-input" class="card-two__input">
-        <button class="card-two__btn">
-            <svg>
-                <use href="./symbol-defs.svg#icon-lupa"></use>
-            </svg>
-        </button>
+  <div class="container">
+    <h2 class="card-two__title">Вгадай число, яке загадав комп’ютер</h2>
+    <div class="card-two__content">
+      <input
+        type="text"
+        id="card-two-input"
+        class="card-two__input"
+        placeholder="Введіть число"
+      />
+      <button class="card-two__btn" type="submit">
+        <svg>
+          <use href="./symbol-defs.svg#icon-lupa"></use>
+        </svg>
+      </button>
+      <p class="card-two__text">Вітаю, ви вгадали число! <span>(number)</span></p>
     </div>
+  </div>
 </section>
