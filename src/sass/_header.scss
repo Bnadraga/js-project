@@ -25,18 +25,17 @@
   &__list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   &__nav {
     display: flex;
     align-items: center;
-    // margin-left: 81px;
   }
-  &__list-two {
+  &__nav-item {
+    // gap: ;
+  }
+  &__wrap {
     display: flex;
     align-items: center;
-    // margin-left: 361px;
   }
-  // &__link {
-  //   margin-left: 50px;
-  // }
 }
