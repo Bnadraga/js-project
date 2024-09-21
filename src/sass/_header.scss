@@ -11,12 +11,14 @@
   &__link {
     font-size: 12px;
     color: $primaryTextColor;
+    display: block;
+    width: 90px;
   }
   &__btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin-right: 51px;
+    margin-right: 30px;
   }
   &__text {
     font-size: 12px;
@@ -30,9 +32,9 @@
   &__nav {
     display: flex;
     align-items: center;
-  }
-  &__nav-item {
-    // gap: ;
+    gap: 14%;
+    margin-right: 90px;
+    margin-left: 40px;
   }
   &__wrap {
     display: flex;
