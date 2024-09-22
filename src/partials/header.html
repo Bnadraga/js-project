@@ -29,10 +29,33 @@
         <div class="header__wrap">
           <button id="header-btn" class="header__btn">
             <svg width="40px" height="20px">
-              <use href="./images/symbol-defs.svg#icon-header-light-version"></use>
+              <use
+                href="./images/symbol-defs.svg#icon-header-light-version"
+              ></use>
             </svg>
           </button>
-          <p class="header__text">Вітаємо, User!</p>
+          <button type="button" class="header__open-modal" data-modal-open>
+            Вітаємо, User!
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" class="modal__close-button" data-modal-close>
+                <svg width="15px" height="15px">
+                  <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+              </button>
+              <p class="modal__text">
+                Привіт! <br>Ви потрапили на сайт інтерактивних ігор та завдань <br>
+                Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
+                Бажаємо Вам гарно провести час!
+              </p>
+              <form class="modal__form">
+                <label class="modal__label">Введіть своє ім’я:</label>
+                <input type="text" class="modal__input" required placeholder="Ваше ім’я..." id="modal-input">
+                <button class="modal__btn" id="modal-btn">Зберегти</button>
+              </form>
+            </div>
+          </div>
         </div>
       </li>
     </ul>
