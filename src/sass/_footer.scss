@@ -1,0 +1,55 @@
+.footer {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__contact{
+    padding: 60px 0;
+    margin-left: 80px;
+    margin-right: 60px;
+  }
+  &__contact-item {
+    font-size: 12px;
+    line-height: 170%;
+
+    &:not(:last-child){
+        margin-bottom: 5px;
+    }
+  }
+  &__link{
+    color: $primaryTextColor;
+  }
+  &__input{
+    font-size: 12px;
+    padding: 10px 0px 10px 10px;
+    background-color: $inputBackgroundColor;
+    color: $inputTextColor;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  }
+  &__btn{
+    font-size: 12px;
+    background-color: $primaryTextColor;
+    color: $primaryBackgroundColor;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    padding: 10px;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    margin-left: -5px;
+  }
+  &__form{
+    margin-bottom: 18px;
+  }
+  &__subtext{
+    font-size: 6px;
+  }
+}
+.modal__title{
+  font-size: 20px;
+  text-align: center;
+  background-image: url(../images/modal-thanks.png);
+  margin-top: 24px;
+  padding-bottom: 100px;
+}

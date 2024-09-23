@@ -1,0 +1,66 @@
+<footer class="footer">
+  <div class="container">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="./index.html">
+          <svg width="165px" height="70px">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__item">
+        <ul class="footer__contact">
+          <li class="footer__contact-item">
+            Тел: <a class="footer__link" href="#">+38 (123) 456 78 90</a>
+          </li>
+          <li class="footer__contact-item">
+            E-Mail: <a class="footer__link" href="#">codingmagic@gmail.com</a>
+          </li>
+          <li class="footer__contact-item">
+            Facebook: <a class="footer__link" href="#">CodingMagic</a>
+          </li>
+          <li class="footer__contact-item">
+            Twitter: <a class="footer__link" href="#">CodingMagic</a>
+          </li>
+          <li class="footer__contact-item">
+            Instagram: <a class="footer__link" href="#">CodingMagic</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer__item">
+        <div class="footer__subscribe">
+          <form class="footer__form">
+            <input
+              type="email"
+              required
+              id="footer-input"
+              class="footer__input"
+              placeholder="Ваша ел. адреса..."
+            />
+            <button type="submit" class="footer__btn" id="footer-btn">
+              Підписатись
+            </button>
+          </form>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button
+                type="button"
+                class="modal__close-button"
+                data-modal-close
+              >
+                <svg width="15px" height="15px">
+                  <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+              </button>
+              <h2 class="modal__title">Дякую за підписку!</h2>
+            </div>
+          </div>
+          <p class="footer__subtext">
+            *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+            сайті
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</footer>

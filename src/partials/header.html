@@ -1,0 +1,75 @@
+<header class="header">
+  <div class="container">
+    <ul class="header__list">
+      <li class="header__item">
+        <a href="./index.html">
+          <svg width="93px" height="38px">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header__item">
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <select id="header-select" name="header">
+              <option class="header__option" value="1">Числовий</option>
+              <option class="header__option" value="2">Ігровий</option>
+              <option class="header__option" value="3">Ознайомчий</option>
+            </select>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__link" width="100px" href="#">Наша команда</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </li>
+      <li class="header__item">
+        <div class="header__wrap">
+          <button id="header-btn" class="header__btn">
+            <svg width="40px" height="20px">
+              <use
+                href="./images/symbol-defs.svg#icon-header-light-version"
+              ></use>
+            </svg>
+          </button>
+          <button type="button" class="header__open-modal" data-modal-open>
+            Вітаємо, User!
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button
+                type="button"
+                class="modal__close-button"
+                data-modal-close
+              >
+                <svg width="15px" height="15px">
+                  <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+              </button>
+              <p class="modal__text">
+                Привіт! <br />Ви потрапили на сайт інтерактивних ігор та завдань
+                <br />
+                Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+                <br />
+                Бажаємо Вам гарно провести час!
+              </p>
+              <form class="modal__form">
+                <label class="modal__label">Введіть своє ім’я:</label>
+                <input
+                  type="text"
+                  class="modal__input"
+                  required
+                  placeholder="Ваше ім’я..."
+                  id="modal-input"
+                />
+                <button class="modal__btn" id="modal-btn">Зберегти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</header>
