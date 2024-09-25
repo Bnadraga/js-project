@@ -1,0 +1,2 @@
+const t=document.getElementById("pool"),e=document.getElementById("ball");t.addEventListener("click",function(i){let n=t.getBoundingClientRect(),h=e.getBoundingClientRect(),l=i.clientX-n.left,d=i.clientY-n.top,c=h.width/2,g=h.height/2,o=n.width-h.width/2,a=n.height-h.height/2,m=Math.max(c,Math.min(l,o)),p=Math.max(g,Math.min(d,a));e.style.left=`${m-h.width/2}px`,e.style.top=`${p-h.height/2}px`});
+//# sourceMappingURL=index.95ef5dea.js.map
