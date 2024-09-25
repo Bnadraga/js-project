@@ -1,0 +1,2 @@
+(()=>{let e={openModalBtn:document.querySelector("[data-modal-open-2]"),closeModalBtn:document.querySelector("[data-modal-close-2]"),modal:document.querySelector("[data-modal-2]")};function t(){e.modal.classList.toggle("is-hidden"),document.body.classList.toggle("no-scroll")}e.openModalBtn.addEventListener("click",t),e.closeModalBtn.addEventListener("click",t)})(),document.getElementById("footer-input").lenght>5&&(document.getElementById("footer-btn").preventDefault(),toggleModal());
+//# sourceMappingURL=index.284e84c9.js.map
