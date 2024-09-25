@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: $primaryBackgroundColor;
+  }
+  
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 36px;
+  }
+  
+  ul.scientists-list {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 36px 59px;
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+  
+  ul.scientists-list li {
+    width: 100px;
+    height: 100px;
+    background-color:$primaryBackgroundColor;
+    border-radius: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 36px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px 36px;
+  }
+  
+  form button {
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: $primaryTextColor;
+    color: $primaryBackgroundColor;
+    cursor: pointer;
+  }
+  
+  form button:nth-child(1) {
+    width: 227px;
+    height: 35px;
+  }
+  
+  form button:nth-child(2) {
+    width: 282px;
+    height: 35px;
+  }
+  
+  form button:nth-child(3) {
+    width: 380px;
+    height: 35px;
+  }
+  
+  form button:nth-child(4) {
+    width: 329px;
+    height: 35px;
+  }
+  
+  form button:nth-child(5) {
+    width: 489px;
+    height: 35px;
+  }
+  
+  form button:nth-child(6) {
+    width: 368px;
+    height: 50px;
+  }
+  
+  form button:nth-child(7) {
+    width: 375px;
+    height: 35px;
+  }
+  
+  form button:nth-child(8) {
+    width: 441px;
+    height: 35px;
+  }
+  
+  form button:nth-child(9) {
+    width: 298px;
+    height: 35px;
+  }
+  form button:nth-child(1) {
+    font-size: 15px;
+    width: 187px;
+  }
+  
+  form button:nth-child(2) {
+    font-size: 15px;
+    width: 242px;
+  }
+  
+  form button:nth-child(3) {
+    font-size: 15px;
+    width: 340px;
+  }
+  
+  form button:nth-child(4) {
+    font-size: 15px;
+    width: 289px;
+  }
+  
+  form button:nth-child(5) {
+    font-size: 15px;
+    width: 449px;
+  }
+  
+  form button:nth-child(6) {
+    font-size: 30px;
+    width: 328px;
+  }
+  
+  form button:nth-child(7) {
+    font-size: 15px;
+    width: 335px;
+  }
+  
+  form button:nth-child(8) {
+    font-size: 15px;
+    width: 401px;
+  }
+  
+  form button:nth-child(9) {
+    font-size: 15px;
+    width: 258px;
+  }
+  
