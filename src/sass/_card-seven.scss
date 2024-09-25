@@ -1,25 +1,28 @@
-.card-seven__title{
-font-weight: 400;
-font-size: 16px;
-color: #000;
-}
-
 .pool {
-    width: 80vw;
-    height: 80vh;
-    background-color: lightgreen;
-    position: relative;
-    border: 2px solid black;
+  width: 720px;
+  height: 220px;
+  border-radius: 37px;
+  background-color: lightgreen;
+  position: relative;
+  border: 2px solid black;
+  padding-bottom: 36px;
 }
 
-.card-seven__icon{
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: top 0.5s ease, left 0.5s ease;
+.card-seven__title {
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.5s ease, left 0.5s ease;
 }
