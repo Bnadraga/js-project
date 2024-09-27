@@ -37,22 +37,22 @@
               class="footer__input"
               placeholder="Ваша ел. адреса..."
             />
-            <button type="submit" class="footer__btn" id="footer-btn">
+            <button type="submit" class="footer__btn" footer-modal-open id="footer-btn">
               Підписатись
             </button>
           </form>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
+          <div class="backdrop is-hidden" footer-modal>
+            <div class="footer-modal">
               <button
                 type="button"
-                class="modal__close-button"
-                data-modal-close
+                class="footer-modal__close-button"
+                footer-modal-close
               >
                 <svg width="15px" height="15px">
                   <use href="./images/symbol-defs.svg#icon-close-modal"></use>
                 </svg>
               </button>
-              <h2 class="modal__title">Дякую за підписку!</h2>
+              <h2 class="footer-modal__title">Дякую за підписку!</h2>
             </div>
           </div>
           <p class="footer__subtext">

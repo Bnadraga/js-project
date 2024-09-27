@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-2]'),
-    closeModalBtn: document.querySelector('[data-modal-close-2]'),
-    modal: document.querySelector('[data-modal-2]'),
+    openModalBtn: document.querySelector('[footer-modal-open]'),
+    closeModalBtn: document.querySelector('[footer-modal-close]'),
+    modal: document.querySelector('[footer-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -15,9 +15,5 @@
 })();
 
 const footerInput = document.getElementById('footer-input');
-
-if (footerInput.lenght > 5) {
-  const footerBtn = document.getElementById('footer-btn');
-  footerBtn.preventDefault();  
-  toggleModal()
-}
+const footerBtn = document.getElementById('footer-btn');
+footerBtn.preventDefault();
