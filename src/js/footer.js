@@ -16,4 +16,8 @@
 
 const footerInput = document.getElementById('footer-input');
 const footerBtn = document.getElementById('footer-btn');
-footerBtn.preventDefault();
+
+const footerForm = document.querySelector('.footer__form');
+footerForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+});

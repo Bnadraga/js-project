@@ -1,16 +1,22 @@
-body{
-    box-sizing: border-box;
-    font-family: "Montserrat Alternates", sans-serif;
-    color: $primaryTextColor;
-    background-image: url(../images/background.png);
-    background-size: 100%;
-    background-position: center;
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: $primaryTextColor;
+  background-image: url(../images/background.png);
+  background-size: 100%;
+  background-position: center;
 }
-ul, 
-ol{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.dark-theme {
+  color: white;
+}
+.dark-theme-container {
+  background-color: rgb(138, 132, 132);
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 h1,
 h2,
@@ -18,26 +24,26 @@ h3,
 h4,
 h5,
 h6,
-p{
-    margin-bottom: 0;
-    margin-top: 0;
+p {
+  margin-bottom: 0;
+  margin-top: 0;
 }
-a{
-    text-decoration: none;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 *,
 ::after,
 ::before {
   box-sizing: border-box;
 }
-img{
-    display: block;
-    width: 100%;
+img {
+  display: block;
+  width: 100%;
 }
-.container{
-    max-width: 1090px;
-    padding: 0 175px;
-    margin: 0 auto;
-    background-color: $primaryBackgroundColor;
+.container {
+  max-width: 1090px;
+  padding: 0 175px;
+  margin: 0 auto;
+  background-color: $primaryBackgroundColor;
 }
