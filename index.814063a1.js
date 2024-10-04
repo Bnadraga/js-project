@@ -1,0 +1,2 @@
+!function(){let u=document.getElementById("birthYear"),e=document.getElementById("checkButton"),t=document.getElementById("result");e.addEventListener("click",function(){let e=parseInt(u.value);e%4==0&&e%100!=0||e%400==0?t.innerHTML=`\u{420}\u{456}\u{43A} ${e} \u{431}\u{443}\u{432} \u{432}\u{438}\u{441}\u{43E}\u{43A}\u{43E}\u{441}\u{43D}\u{438}\u{43C}.`:t.innerHTML=`\u{420}\u{456}\u{43A} ${e} \u{43D}\u{435} \u{431}\u{443}\u{432} \u{432}\u{438}\u{441}\u{43E}\u{43A}\u{43E}\u{441}\u{43D}\u{438}\u{43C}.`})}();
+//# sourceMappingURL=index.814063a1.js.map
