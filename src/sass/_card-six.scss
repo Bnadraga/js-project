@@ -16,6 +16,7 @@
   overflow: hidden;
   background-repeat: repeat-x;
   background-position-y: bottom;
+  background-color: rgb(223, 223, 255);
 }
 .dino-results {
   color: white;
@@ -55,16 +56,16 @@
   position: absolute;
 }
 .dino-player {
-  width: 50px;
-  height: 60px;
+  width: 70px;
+  height: 80px;
   transition: all 0.2s;
   position: absolute;
   bottom: 15px;
   left: 100px;
 }
 .dino-cactus {
-  width: 32px;
-  height: 50px;
+  width: 50px;
+  height: 70px;
   transition: all 0.2s;
   position: absolute;
   bottom: 15px;
