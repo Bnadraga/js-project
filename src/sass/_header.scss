@@ -3,17 +3,27 @@
     font-size: 12px;
     color: $primaryTextColor;
     display: block;
-    width: 100px;
   }
-  &__btn-text{
+  &__nav-item {
+    font-size: 12px;
+    color: $primaryTextColor;
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+  &__btn-text {
     color: $primaryTextColor;
     font-size: 12px;
-
+    position: relative;
   }
   &__text {
     font-family: 'Montserrat';
     background-color: transparent;
     border: none;
+    display: flex;
+    align-items: center;
   }
   &__svg {
     margin-left: 8px;
@@ -22,12 +32,32 @@
     display: none;
     font-size: 12px;
     color: $primaryTextColor;
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid $primaryTextColor;
+    border-left: 1px solid $primaryTextColor;
+    border-right: 1px solid $primaryTextColor;
+    background-color: white;
+  }
+  &__select-link {
+    padding: 10px 49px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: $primaryTextColor;
+    transition: background ease-in-out 200ms;
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
   }
   &__btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin-right: 30px;
+    margin-right: 15px;
   }
   &__open-modal {
     margin-left: 10px;
@@ -43,13 +73,11 @@
   &__nav {
     display: flex;
     align-items: center;
-    gap: 15%;
-    margin-right: 80px;
-    margin-left: 30px;
   }
   &__wrap {
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
 }
 .backdrop {

@@ -1,17 +1,21 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: $primaryTextColor;
   background-image: url(../images/background.png);
   background-size: 100%;
   background-position: center;
 }
-.dark-theme {
-  color: white;
+.container {
+  max-width: 1090px;
+  padding: 0 175px;
+  margin: 0 auto;
+  background-color: $primaryBackgroundColor;
+  color: $primaryTextColor;
 }
-.dark-theme-container {
-  background-color: rgb(138, 132, 132);
-}
+
 ul,
 ol {
   list-style: none;
@@ -41,9 +45,12 @@ img {
   display: block;
   width: 100%;
 }
-.container {
-  max-width: 1090px;
-  padding: 0 175px;
-  margin: 0 auto;
+
+.container.dark-theme {
+  color: $primaryBackgroundColor;
+  background-color: rgb(138, 132, 132);
+}
+.container.light-theme{
   background-color: $primaryBackgroundColor;
+  color: $primaryTextColor;
 }

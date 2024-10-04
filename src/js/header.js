@@ -14,37 +14,35 @@
   }
 })();
 
-const headerSelectBtn = document.querySelector('.header__text');
-const headerSelectList = document.querySelector('.header__select');
-headerSelectBtn.addEventListener('click', () => {
-  headerSelectList.style.display = 'block';
+const userBtn = document.getElementById('modal-btn');
+
+userBtn.addEventListener('click', () => {
+  const userName = document.querySelector('.header__btn-text');
+  const userInput = document.getElementById('modal-input').value;
+
+  if (userInput.length > 1) {
+    userName.textContent = `Вітаємо, ${userInput}!`;
+  } else {
+    alert("Error. Your name is incorrect");
+  }
 });
 
-// const userName = document.querySelector('.header__modal-open');
-// const userInput = document.getElementById('modal-input').value;
-// const userBtn = document.getElementById('modal-btn');
+const headerForm = document.querySelector('.modal__form');
+headerForm.addEventListener('submit', e => {
+  e.preventDefault();
+});
 
-// userBtn.addEventListener('click', () => {
-//   userName.innerHTML = `Вітаємо, ${userInput}!`;
-// });
-
-// const headerForm = document.querySelector('.modal__form');
-// headerForm.addEventListener('submit', (event) => {
-//   event.preventDefault();
+// const headerSelectBtn = document.querySelector('.header__text');
+// const headerSelectList = document.querySelector('.header__select');
+// headerSelectBtn.addEventListener('click', () => {
+//   headerSelectList.style.display = 'block';
 // });
 
 // const headerBtn = document.getElementById('header-btn');
+// const container = document.querySelector('.container')
 // headerBtn.addEventListener('click', () => {
-//   const body = document.querySelector('body');
-//   if (body.classList.contains('light-theme')) {
-//     body.classList.remove('light-theme');
-//     body.classList.add('dark-theme');
-//     document.querySelector('.container').classList.remove('light-theme');
-//     document.querySelector('.container').classList.add('dark-theme');
-//   } else {
-//     body.classList.remove('dark-theme');
-//     body.classList.add('light-theme');
-//     document.querySelector('.container').classList.remove('dark-theme');
-//     document.querySelector('.container').classList.add('light-theme');
-//   }
+//   container.classList.toggle('dark-theme');
+//   container.classList.toggle('light-theme');
 // });
+
+// container.classList.add('light-theme');
