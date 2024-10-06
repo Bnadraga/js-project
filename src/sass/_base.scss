@@ -16,16 +16,21 @@ body {
   color: $primaryTextColor;
 }
 
-@media (prefers-color-scheme: dark) {
-  .container {
-    color: $primaryBackgroundColor;
-    background-color: rgb(138, 132, 132);
-  }
-  .card-two__line{
-    border-bottom: 1px solid $primaryTextColor;
-  }
-}
-
+// @media (prefers-color-scheme: dark) {
+//   .container {
+//     color: $primaryBackgroundColor;
+//     background-color: rgb(138, 132, 132);
+//   }
+//   .card-two__line{
+//     border-bottom: 1px solid $primaryTextColor;
+//   }
+//   h2{
+//     color: $primaryBackgroundColor;
+//   }
+//   input{
+//     background-color: rgb(122, 114, 114);
+//   }
+// }
 
 ul,
 ol {

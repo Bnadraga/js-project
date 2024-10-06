@@ -46,61 +46,63 @@ const allCard = document.getElementById('header-all');
 const numsCard = document.getElementById('header-nums');
 const gamesCard = document.getElementById('header-games');
 const seeCard = document.getElementById('header-see');
-const categories = games.map(game => game.category)
+
+const cardOne = document.querySelector('.card-one');
+const cardTwo = document.querySelector('.card-two');
+const cardThree = document.querySelector('.card-three');
+const cardFour = document.querySelector('.card-four');
+const cardFive = document.querySelector('.card-five');
+const cardSix = document.querySelector('.card-six');
+const cardSeven = document.querySelector('.card-seven');
+const cardEight = document.querySelector('.card-eight');
+const cardNine = document.querySelector('.card-nine');
+const cardTen = document.querySelector('.card-ten');
 
 allCard.addEventListener('click', () => {
-  
+  cardOne.style.display = 'block';
+  cardTwo.style.display = 'block';
+  cardThree.style.display = 'block';
+  cardFour.style.display = 'block';
+  cardFive.style.display = 'block';
+  cardSix.style.display = 'block';
+  cardSeven.style.display = 'block';
+  cardEight.style.display = 'block';
+  cardNine.style.display = 'block';
+  cardTen.style.display = 'block';
 });
-
-const games = [
-  {
-    id: 1,
-    name: 'Високосний калькулятор',
-    category: 'numerical',
-  },
-  {
-    id: 2,
-    name: 'Вгадай число',
-    category: 'numerical',
-  },
-  {
-    id: 3,
-    name: 'Камінь-Ножиці-Папір',
-    category: 'game',
-  },
-  {
-    id: 4,
-    name: 'Калькулятор',
-    category: 'numerical',
-  },
-  {
-    id: 5,
-    name: 'Калькулятор часу',
-    category: 'numerical',
-  },
-  {
-    id: 6,
-    name: 'Google динозаврик',
-    category: 'game',
-  },
-  {
-    id: 7,
-    name: 'Футбол',
-    category: 'game',
-  },
-  {
-    id: 8,
-    name: 'Найбільше число',
-    category: 'numerical',
-  },
-  {
-    id: 9,
-    name: 'Наша команда',
-    category: 'acquaintance',
-  },
-  {
-    id: 10,
-    name: 'Вчений',
-    category: 'acquaintance',
-  },
-];
+numsCard.addEventListener('click', () => {
+  cardOne.style.display = 'block';
+  cardTwo.style.display = 'block';
+  cardThree.style.display = 'none';
+  cardFour.style.display = 'block';
+  cardFive.style.display = 'block';
+  cardSix.style.display = 'none';
+  cardSeven.style.display = 'none';
+  cardEight.style.display = 'block';
+  cardNine.style.display = 'none';
+  cardTen.style.display = 'none';
+});
+gamesCard.addEventListener('click', () => {
+  cardOne.style.display = 'none';
+  cardTwo.style.display = 'none';
+  cardThree.style.display = 'block';
+  cardFour.style.display = 'none';
+  cardFive.style.display = 'none';
+  cardSix.style.display = 'block';
+  cardSeven.style.display = 'block';
+  cardEight.style.display = 'none';
+  cardNine.style.display = 'none';
+  cardTen.style.display = 'none';
+});
+seeCard.addEventListener('click', () => {
+  cardOne.style.display = 'none';
+  cardTwo.style.display = 'none';
+  cardThree.style.display = 'none';
+  cardFour.style.display = 'none';
+  cardFive.style.display = 'none';
+  cardSix.style.display = 'none';
+  cardSeven.style.display = 'none';
+  cardEight.style.display = 'none';
+  cardNine.style.display = 'block';
+  cardTen.style.display = 'block';
+});
