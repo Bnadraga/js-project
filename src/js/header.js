@@ -23,7 +23,7 @@ userBtn.addEventListener('click', () => {
   if (userInput.length > 1) {
     userName.textContent = `Вітаємо, ${userInput}!`;
   } else {
-    alert("Error. Your name is incorrect");
+    alert('Error. Your name is incorrect');
   }
 });
 
@@ -32,17 +32,75 @@ headerForm.addEventListener('submit', e => {
   e.preventDefault();
 });
 
-// const headerSelectBtn = document.querySelector('.header__text');
-// const headerSelectList = document.querySelector('.header__select');
-// headerSelectBtn.addEventListener('click', () => {
-//   headerSelectList.style.display = 'block';
-// });
+const headerSelectBtn = document.querySelector('.header__text');
+const headerSelectList = document.querySelector('.header__select');
+headerSelectBtn.addEventListener('click', () => {
+  if (headerSelectList.style.display === 'block') {
+    headerSelectList.style.display = 'none';
+  } else {
+    headerSelectList.style.display = 'block';
+  }
+});
 
-// const headerBtn = document.getElementById('header-btn');
-// const container = document.querySelector('.container')
-// headerBtn.addEventListener('click', () => {
-//   container.classList.toggle('dark-theme');
-//   container.classList.toggle('light-theme');
-// });
+const allCard = document.getElementById('header-all');
+const numsCard = document.getElementById('header-nums');
+const gamesCard = document.getElementById('header-games');
+const seeCard = document.getElementById('header-see');
+const categories = games.map(game => game.category)
 
-// container.classList.add('light-theme');
+allCard.addEventListener('click', () => {
+  
+});
+
+const games = [
+  {
+    id: 1,
+    name: 'Високосний калькулятор',
+    category: 'numerical',
+  },
+  {
+    id: 2,
+    name: 'Вгадай число',
+    category: 'numerical',
+  },
+  {
+    id: 3,
+    name: 'Камінь-Ножиці-Папір',
+    category: 'game',
+  },
+  {
+    id: 4,
+    name: 'Калькулятор',
+    category: 'numerical',
+  },
+  {
+    id: 5,
+    name: 'Калькулятор часу',
+    category: 'numerical',
+  },
+  {
+    id: 6,
+    name: 'Google динозаврик',
+    category: 'game',
+  },
+  {
+    id: 7,
+    name: 'Футбол',
+    category: 'game',
+  },
+  {
+    id: 8,
+    name: 'Найбільше число',
+    category: 'numerical',
+  },
+  {
+    id: 9,
+    name: 'Наша команда',
+    category: 'acquaintance',
+  },
+  {
+    id: 10,
+    name: 'Вчений',
+    category: 'acquaintance',
+  },
+];

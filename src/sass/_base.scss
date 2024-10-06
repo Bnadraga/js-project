@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -15,6 +15,17 @@ body {
   background-color: $primaryBackgroundColor;
   color: $primaryTextColor;
 }
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    color: $primaryBackgroundColor;
+    background-color: rgb(138, 132, 132);
+  }
+  .card-two__line{
+    border-bottom: 1px solid $primaryTextColor;
+  }
+}
+
 
 ul,
 ol {
@@ -44,13 +55,4 @@ a {
 img {
   display: block;
   width: 100%;
-}
-
-.container.dark-theme {
-  color: $primaryBackgroundColor;
-  background-color: rgb(138, 132, 132);
-}
-.container.light-theme{
-  background-color: $primaryBackgroundColor;
-  color: $primaryTextColor;
 }
