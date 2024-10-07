@@ -106,3 +106,21 @@ seeCard.addEventListener('click', () => {
   cardNine.style.display = 'block';
   cardTen.style.display = 'block';
 });
+
+const themeBtn = document.getElementById('header-btn');
+const containers = document.querySelectorAll('.container');
+let isDarkTheme = false;
+
+themeBtn.addEventListener('click', () => {
+  containers.forEach(container => {
+    if (isDarkTheme) {
+      container.classList.add('light-theme');
+      container.classList.remove('dark-theme');
+    } else {
+      container.classList.add('dark-theme');
+      container.classList.remove('light-theme');
+    }
+  });
+
+  isDarkTheme = !isDarkTheme;
+});

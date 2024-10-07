@@ -16,22 +16,73 @@ body {
   color: $primaryTextColor;
 }
 
-// @media (prefers-color-scheme: dark) {
-//   .container {
-//     color: $primaryBackgroundColor;
-//     background-color: rgb(138, 132, 132);
-//   }
-//   .card-two__line{
-//     border-bottom: 1px solid $primaryTextColor;
-//   }
-//   h2{
-//     color: $primaryBackgroundColor;
-//   }
-//   input{
-//     background-color: rgb(122, 114, 114);
-//   }
-// }
+.dark-theme {
+  color: $primaryBackgroundColor;
+  background-color: rgb(138, 132, 132);
+  .pool {
+    background-color: rgb(75, 128, 75);
+  }
+  input {
+    background-color: rgb(90, 90, 90);
+    color: $primaryBackgroundColor;
+  }
+  a {
+    color: $primaryBackgroundColor;
+  }
+  p {
+    color: white;
+  }
+  .modal {
+    background-color: rgb(54, 54, 54);
+  }
+  #result {
+    color: white;
+  }
+  h2 {
+    color: white;
+  }
+  .footer-modal {
+    background-color: rgb(54, 54, 54);
+  }
+  .card-ten__item {
+    background-color: rgb(54, 54, 54);
+  }
+  .dino-points {
+    color: black;
+    font-weight: 700;
+  }
+  .dino-container {
+    background-color: rgb(64, 46, 224);
+  }
+  .header__select-link {
+    background-color: rgb(54, 54, 54);
 
+    &:hover {
+      color: rgb(54, 54, 54);
+    }
+  }
+  .header__select {
+    border: 1px solid white;
+    background-color: rgb(54, 54, 54);
+  }
+  .header__text {
+    color: white;
+  }
+  .logo {
+    fill: white;
+  }
+  .card-four__input {
+    background-color: rgb(90, 90, 90);
+    color: $primaryBackgroundColor;
+  }
+}
+.light-theme {
+  background-color: $primaryBackgroundColor;
+  color: $primaryTextColor;
+}
+input {
+  font-size: 12px;
+}
 ul,
 ol {
   list-style: none;

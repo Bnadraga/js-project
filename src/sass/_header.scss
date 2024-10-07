@@ -52,6 +52,9 @@
     &:hover {
       background-color: #f1f1f1;
     }
+    &:last-child {
+      border-radius: 20px;
+    }
   }
   &__btn {
     background-color: transparent;
@@ -151,4 +154,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
   }
+}
+.logo{
+  fill: black;
 }
