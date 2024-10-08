@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" id="footer">
   <div class="container">
     <ul class="footer__list">
       <li class="footer__item">
@@ -11,19 +11,28 @@
       <li class="footer__item">
         <ul class="footer__contact">
           <li class="footer__contact-item">
-            Тел: <a class="footer__link" href="#">+38 (123) 456 78 90</a>
+            <p class="footer__contact-text">Тел: </p>
+            <a class="footer__link" href="tel:+381234567890"
+              > +38 (123) 456 78 90</a
+            >
           </li>
           <li class="footer__contact-item">
-            E-Mail: <a class="footer__link" href="#">codingmagic@gmail.com</a>
+            <p class="footer__contact-text">E-Mail: </p>
+            <a class="footer__link" href="mailto:codingmagic@gmail.com"
+              > codingmagic@gmail.com</a
+            >
           </li>
           <li class="footer__contact-item">
-            Facebook: <a class="footer__link" href="#">CodingMagic</a>
+            <p class="footer__contact-text">Facebook: </p>
+            <a class="footer__link" href="#"> CodingMagic</a>
           </li>
           <li class="footer__contact-item">
-            Twitter: <a class="footer__link" href="#">CodingMagic</a>
+            <p class="footer__contact-text">Twitter: </p>
+            <a class="footer__link" href="#"> CodingMagic</a>
           </li>
           <li class="footer__contact-item">
-            Instagram: <a class="footer__link" href="#">CodingMagic</a>
+            <p class="footer__contact-text">Instagram: </p>
+            <a class="footer__link" href="#"> CodingMagic</a>
           </li>
         </ul>
       </li>
@@ -37,22 +46,27 @@
               class="footer__input"
               placeholder="Ваша ел. адреса..."
             />
-            <button type="submit" class="footer__btn" id="footer-btn">
+            <button
+              type="submit"
+              class="footer__btn"
+              footer-modal-open
+              id="footer-btn"
+            >
               Підписатись
             </button>
           </form>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
+          <div class="backdrop is-hidden" footer-modal>
+            <div class="footer-modal">
               <button
                 type="button"
-                class="modal__close-button"
-                data-modal-close
+                class="footer-modal__close-button"
+                footer-modal-close
               >
                 <svg width="15px" height="15px">
                   <use href="./images/symbol-defs.svg#icon-close-modal"></use>
                 </svg>
               </button>
-              <h2 class="modal__title">Дякую за підписку!</h2>
+              <h2 class="footer-modal__title">Дякую за підписку!</h2>
             </div>
           </div>
           <p class="footer__subtext">

@@ -3,7 +3,7 @@
     <ul class="header__list">
       <li class="header__item">
         <a href="./index.html">
-          <svg width="93px" height="38px">
+          <svg class="logo" width="93px" height="38px">
             <use href="./images/symbol-defs.svg#icon-logo"></use>
           </svg>
         </a>
@@ -11,17 +11,35 @@
       <li class="header__item">
         <ul class="header__nav">
           <li class="header__nav-item">
-            <select id="header-select" name="header">
-              <option class="header__option" value="1">Числовий</option>
-              <option class="header__option" value="2">Ігровий</option>
-              <option class="header__option" value="3">Ознайомчий</option>
-            </select>
+            <button type="button" class="header__text">Інтерактив</button>
+            <ul class="header__select">
+              <li class="header__select-item">
+                <a href="#" id="header-all" class="header__select-link">Усe</a>
+              </li>
+              <li class="header__select-item">
+                <a href="#" id="header-nums" class="header__select-link"
+                  >Числовий</a
+                >
+              </li>
+              <li class="header__select-item">
+                <a href="#" id="header-games" class="header__select-link"
+                  >Ігровий</a
+                >
+              </li>
+              <li class="header__select-item">
+                <a href="#" id="header-see" class="header__select-link"
+                  >Ознайомчий</a
+                >
+              </li>
+            </ul>
           </li>
           <li class="header__nav-item">
-            <a class="header__link" width="100px" href="#">Наша команда</a>
+            <a class="header__link" width="100px" href="index.html#card-nine"
+              >Наша команда</a
+            >
           </li>
           <li class="header__nav-item">
-            <a class="header__link" href="#">Контакти</a>
+            <a class="header__link" href="index.html#footer">Контакти</a>
           </li>
         </ul>
       </li>
@@ -34,8 +52,15 @@
               ></use>
             </svg>
           </button>
+          <p class="header__btn-text">Вітаємо, User!</p>
           <button type="button" class="header__open-modal" data-modal-open>
-            Вітаємо, User!
+            <img
+              width="20px"
+              height="20px"
+              class="header__img"
+              src="./images/earth.png"
+              alt=""
+            />
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
