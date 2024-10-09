@@ -5,14 +5,17 @@ function play(userPlay) {
     const computerPlay = options[Math.floor(Math.random() * options.length)];
     let result = "";
 
-    if (userPlay === computerPlay) result = "Нічия!";
-    else if ((userPlay === "камінь" && computerPlay === "ножиці") ||
-             (userPlay === "ножиці" && computerPlay === "папір") ||
-             (userPlay === "папір" && computerPlay === "камінь")) {
-        user;
+    if (userPlay === computerPlay) {
+        result = "Нічия!";
+    } else if (
+        (userPlay === "камінь" && computerPlay === "ножиці") ||
+        (userPlay === "ножиці" && computerPlay === "папір") ||
+        (userPlay === "папір" && computerPlay === "камінь")
+    ) {
+        user++;
         result = "Ви виграли!";
     } else {
-        computer;
+        computer++;
         result = "Комп'ютер виграв!";
     }
 
@@ -21,6 +24,6 @@ function play(userPlay) {
     document.getElementById('user').textContent = user;
 }
 
-document.getElementById('card-three-stone').onclick = () => play('камінь');
-document.getElementById('card-three-scissors').onclick = () => play('ножиці');
-document.getElementById('card-three-paper').onclick = () => play('папір');
+document.getElementById('stone').onclick = () => play('камінь');
+document.getElementById('scissors').onclick = () => play('ножиці');
+document.getElementById('paper').onclick = () => play('папір');
