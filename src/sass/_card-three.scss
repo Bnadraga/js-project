@@ -1,81 +1,92 @@
-.card-three__text {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
-    text-align: center;
+.card-three__text { 
+  margin-top: 36px; 
+  font-size: 16px; 
+  color: #000; 
+  text-align: center; 
+  padding-top: 36px; 
+  font-weight: 400; 
+} 
+ 
+.card-three__form { 
+  margin-bottom: 36px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+} 
+ 
+.card-three__stone { 
+  border-radius: 20px; 
+  padding: 10px; 
+  width: 60px; 
+  height: 60px; 
+  background: $primaryTextColor; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+} 
+ 
+.card-three__scissors { 
+  border-radius: 20px; 
+  padding: 10px; 
+  width: 60px; 
+  height: 60px; 
+  background: $primaryTextColor; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  margin: 38px; 
+} 
+ 
+.card-three__paper { 
+  border-radius: 20px; 
+  padding: 10px; 
+  width: 60px; 
+  height: 60px; 
+  background: $primaryTextColor; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+} 
+ 
+.card-three__stone:hover, 
+.card-three__scissors:hover, 
+.card-three__paper:hover { 
+  background-color: $primaryBackgroundColor; 
+  background-image: $primaryTextColor; 
+} 
+ 
+.card-three__item { 
+  font-size: 12px; 
+  line-height: 170%; 
+  color: $primaryTextColor; 
+} 
+ 
+.card-three__block { 
+  margin-top: 36px; 
+  font-size: 12px; 
+  color: $correctAnswerTextColor; 
+} 
+ 
+.card-three__btn { 
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  width: 182px; 
+  height: 35px; 
+  background: $primaryTextColor; 
+  color: $primaryBackgroundColor; 
+  cursor: pointer; 
+  font-size: 12px; 
+  color: #fff; 
+  margin-top: 36px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+} 
+ 
+.card-three__btn:hover { 
+  background-color: $primaryBackgroundColor; 
+  color: $primaryTextColor; 
+} 
+ 
+.card-three__line { 
+  margin: 0 auto; 
+  margin-top: 36px; 
+  border: 1px solid $primaryTextColor; 
 }
-
-.card-three__form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-three__stone {
-    border-radius: 20px;
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    background: $primaryTextColor;
-    cursor: pointer;
-}
-
-.card-three__scissors {
-    border-radius: 20px;
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    background: $primaryTextColor;
-    cursor: pointer;
-    right: 38px;
-    ;
-    left: 38px;
-}
-
-.card-three__paper {
-    border-radius: 20px;
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    background: $primaryTextColor;
-    cursor: pointer;
-}
-
-.card-three__item {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 170%;
-    color: #000;
-}
-
-.card-three__block {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 12px;
-    color: $correctAnswerTextColor;
-}
-
-.card-three__btn {
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    padding: 10px 20px;
-    width: 182px;
-    height: 35px;
-    background: $primaryTextColor;
-    color: $primaryBackgroundColor;
-    cursor: pointer;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 12px;
-    color: #fff;
-    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.card-three__btn:hover {
-    background-color: $primaryBackgroundColor;
-    color: $primaryTextColor;
-}
-
