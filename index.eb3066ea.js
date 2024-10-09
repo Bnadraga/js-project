@@ -1,0 +1,2 @@
+!function(){let e=0,t=document.querySelectorAll(".slide"),c=document.querySelector("#prevBtn"),l=document.querySelector("#nextBtn"),i=document.querySelectorAll(".line");function s(){c.disabled=0===e,l.disabled=e===t.length-1,i.forEach((t,c)=>{t.classList.toggle("active",c===e)})}c.addEventListener("click",()=>{t[e].classList.remove("active"),t[e+=-1].classList.add("active"),s()}),l.addEventListener("click",()=>{t[e].classList.remove("active"),t[e+=1].classList.add("active"),s()}),s()}();
+//# sourceMappingURL=index.eb3066ea.js.map

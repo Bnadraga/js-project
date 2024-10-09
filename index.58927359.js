@@ -1,0 +1,2 @@
+let e=0;const t=document.querySelectorAll(".slide"),c=document.querySelector("#prevBtn"),l=document.querySelector("#nextBtn"),s=document.querySelectorAll(".line");function i(){c.disabled=0===e,l.disabled=e===t.length-1,s.forEach((t,c)=>{t.classList.toggle("active",c===e)})}c.addEventListener("click",()=>{t[e].classList.remove("active"),t[e+=-1].classList.add("active"),i()}),l.addEventListener("click",()=>{t[e].classList.remove("active"),t[e+=1].classList.add("active"),i()}),i();
+//# sourceMappingURL=index.58927359.js.map
