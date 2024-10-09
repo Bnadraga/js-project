@@ -116,9 +116,11 @@ themeBtn.addEventListener('click', () => {
     if (isDarkTheme) {
       container.classList.add('light-theme');
       container.classList.remove('dark-theme');
+      themeBtn.querySelector('use').setAttribute('href', '');
     } else {
       container.classList.add('dark-theme');
       container.classList.remove('light-theme');
+      themeBtn.querySelector('use').setAttribute('href', '');
     }
   });
 
