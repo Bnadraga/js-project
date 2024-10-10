@@ -116,11 +116,11 @@ themeBtn.addEventListener('click', () => {
     if (isDarkTheme) {
       container.classList.add('light-theme');
       container.classList.remove('dark-theme');
-      themeBtn.querySelector('use').setAttribute('href', '');
+      themeBtn.querySelector('use').setAttribute('href', './images/symbol-defs.svg#icon-header-light-version');
     } else {
       container.classList.add('dark-theme');
       container.classList.remove('light-theme');
-      themeBtn.querySelector('use').setAttribute('href', '');
+      themeBtn.querySelector('use').setAttribute('href', './images/symbol-defs.svg#icon-header-dark-version');
     }
   });
 
