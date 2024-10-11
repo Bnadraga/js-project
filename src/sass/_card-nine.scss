@@ -1,113 +1,115 @@
 .card-nine {
-  background-color: $primaryBackgroundColor;
+    background-color: $primaryBackgroundColor;
+    padding: 0 92px;
 
-  .border {
-    display: flex;
-    margin: 0 auto;
-    background-color: $primaryTextColor;
-    width: 536px;
-    margin-bottom: 36px;
-  }
+    &__title {
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        margin: 36px 0px;
+        text-align: center;
+    }
+          &__div {
+              display: flex;
+              height: 300px;
+              align-items: center;
+          }
 
-  &__title {
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
-    margin: 36px 0px;
-    text-align: center;
-  }
+    &__card-nine {
+        margin: 0px 115px;
+        border-radius: 20px;
+        width: 576px;
+        display: flex;
+    }
 
-  &__div {
-    display: flex;
-    height: 300px;
-    align-items: center;
-  }
+    &__button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        height: 100px;
+    }
 
-  &__card-nine {
-    margin: 0px 115px;
-    border-radius: 20px;
-    display: flex;
-  }
+    &__position {
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
 
-  &__button {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    height: 100px;
-  }
+    &__p {
+        display: flex;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
 
-  &__position {
-    font-weight: 500;
-    font-size: 20px;
-    margin-top: 5px;
-  }
-
-  &__p {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 20px;
-    color: #000;
-    margin-top: 5px;
-  }
+    &__text-wrap {
+        margin-top: 30px;
+    }
 }
 
 .slide {
-  display: flex;
-  flex-direction: column;
+    display: flex;
 }
 
 .card-nine__button:disabled {
-  cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 .slide {
-  display: none;
+    display: none;
 }
 
 .slide.active {
-  display: flex;
+    display: flex;
 }
 
 .mini-line {
-  display: flex;
-  width: 174px;
-  justify-content: space-between;
-  align-items: baseline;
-  margin: 0 auto;
-  margin-top: 30px;
+    display: flex;
+    width: 174px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .line {
-  width: 18px;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #d9d9d9;
-  transition: width 250ms ease-in-out;
+    width: 18px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #d9d9d9;
+    transition: width 250ms ease-in-out;
 }
 
 .line.active {
-  width: 30px;
-  background-color: #797979;
+    width: 30px;
+    background-color: #797979;
 }
 
 .images {
-  border-radius: 20px;
-  display: flex;
-  overflow: hidden;
-}
+    object-fit: cover;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 26px;
 
-.card-nine__img-wrap{
-  display: flex;
 }
 
 .arrow {
-  background-color: white;
-  display: flex;
+    background-color: white;
+    display: flex;
+    position: absolute;
+
+
 }
 
 .name {
-  font-weight: 400;
-  font-size: 36px;
-  color: #000;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
 }
