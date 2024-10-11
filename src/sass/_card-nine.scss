@@ -1,7 +1,4 @@
 .card-nine {
-    background-color: $primaryBackgroundColor;
-    padding: 0 92px;
-
     &__title {
         font-weight: 400;
         font-size: 16px;
@@ -9,11 +6,11 @@
         margin: 36px 0px;
         text-align: center;
     }
-          &__div {
-              display: flex;
-              height: 300px;
-              align-items: center;
-          }
+    &__div {
+        display: flex;
+        height: 300px;
+        align-items: center;
+    }
 
     &__card-nine {
         margin: 0px 115px;
