@@ -11,7 +11,6 @@ function updateButtons() {
     dots.forEach((dot, index) => {
         dot.classList.toggle('active', index === currentSlide);
     });
-
 }
 
 prevBtn.addEventListener('click', () => {
