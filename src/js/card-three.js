@@ -1,29 +1,27 @@
 let user = 0, computer = 0;
-const options = ["камінь", "ножиці", "папір"];
+const userScoreElement = document.getElementById('user');
+const computerScoreElement = document.getElementById('computer');
+const resultBlock = document.getElementById('card-three-block');
 
-function play(userPlay) {
-    const computerPlay = options[Math.floor(Math.random() * options.length)];
-    let result = "";
+const game = { Камінь: 'Ножиці', Ножиці: 'Папір', Папір: 'Камінь' };
+const getComputerPlay = () => Object.keys(game)[Math.floor(Math.random() * 3)];
 
-    if (userPlay === computerPlay) {
-        result = "Нічия!";
-    } else if (
-        (userPlay === "камінь" && computerPlay === "ножиці") ||
-        (userPlay === "ножиці" && computerPlay === "папір") ||
-        (userPlay === "папір" && computerPlay === "камінь")
-    ) {
-        user++;
-        result = "Ви виграли!";
-    } else {
-        computer++;
-        result = "Комп'ютер виграв!";
-    }
+const play = (userPlay) => {
+    const computerPlay = getComputerPlay();
+    const result = userPlay === computerPlay ? 'Нічия!' :
+        game[userPlay] === computerPlay ? (++user, 'Ви виграли!') : (++computer, 'Ви програли!');
 
-    document.getElementById('card-three-block').innerHTML = `Комп'ютер: ${computerPlay}<br>${result}`;
-    document.getElementById('computer').textContent = computer;
-    document.getElementById('user').textContent = user;
-}
+    resultBlock.textContent = `Комп'ютер обрав: ${computerPlay}. ${result}`;
+    resultBlock.style.color = result === 'Ви виграли!' ? 'green' : result === 'Ви програли!' ? 'red' : 'black';
+    userScoreElement.textContent = user;
+    computerScoreElement.textContent = computer;
+};
 
-document.getElementById('stone').onclick = () => play('камінь');
-document.getElementById('scissors').onclick = () => play('ножиці');
-document.getElementById('paper').onclick = () => play('папір');
+document.getElementById('stone').onclick = () => play('Камінь');
+document.getElementById('scissors').onclick = () => play('Ножиці');
+document.getElementById('paper').onclick = () => play('Папір');
+document.getElementById('card-three-btn').onclick = () => {
+    const computerPlay = getComputerPlay();
+    resultBlock.textContent = `Комп'ютер обрав: ${computerPlay}`;
+    resultBlock.style.color = 'black';
+};
