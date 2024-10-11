@@ -1,5 +1,4 @@
 .card-three__text {
-  margin-top: 36px;
   font-size: 16px;
   color: #000;
   text-align: center;
@@ -45,17 +44,17 @@
   transition: background-color 0.3s;
 }
 
-.card-three__stone:hover,
-.card-three__scissors:hover,
-.card-three__paper:hover {
-  background-color: $primaryBackgroundColor;
-  background-image: $primaryTextColor;
+.card-three__content{
+  display: flex;
+    justify-content: center;
+  flex-direction: column;
 }
 
 .card-three__item {
   font-size: 12px;
   line-height: 170%;
   color: $primaryTextColor;
+  text-align: center;
 }
 
 .card-three__block {
